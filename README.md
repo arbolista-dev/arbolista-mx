@@ -46,6 +46,21 @@
           "degree": "BS Environmental Engineering"
         }
       ],
+      "links": [
+        {
+          "title": "Toptal",
+          "href": "https://www.toptal.com/resume/eric-hulburd"
+        }, {
+          "title": "LinkedIn",
+          "href": "https://www.linkedin.com/in/eric-hulburd-8b025a39"
+        }, {
+          "title": "Github",
+          "href": "https://github.com/arbolista"
+        }, {
+          "title": "Stackoverflow",
+          "href": "http://stackoverflow.com/users/1149459/eric-h"
+        }
+      ],
       "experience": [
         {
           "title": "Analytics Fire",
