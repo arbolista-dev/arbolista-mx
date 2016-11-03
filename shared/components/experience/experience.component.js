@@ -16,7 +16,7 @@ class ExperienceComponent extends InfoComponent(SpikeComponent) {
 }
 
 ExperienceComponent.propTypes = {
-	info: React.PropTypes.object.isRequired,
+	info: React.PropTypes.string.isRequired,
 };
 
 module.exports =  ExperienceComponent;

@@ -23,17 +23,12 @@ class LayoutComponent extends SpikeComponent {
     return this.props.location.get('routeName');
   }
 
-  componentDidMount() {
-    let layout = this;
-    layout.props.ensureInfo();
-  }
-
   render(){
     let CurrentLayout = this.current_route.component;
     return (
       <div id="layout">
-        <Header info={this.props.info}/>
-        <CurrentLayout info={this.props.info}/>
+        <Header info={this.route_name}/>
+        <CurrentLayout info={this.route_name}/>
         <Footer/>
       </div>
     )
@@ -43,7 +38,6 @@ class LayoutComponent extends SpikeComponent {
 
 LayoutComponent.propTypes = {
   location: React.PropTypes.object.isRequired,
-  info: React.PropTypes.object.isRequired 
 }
 
 module.exports = layoutContainer(LayoutComponent);

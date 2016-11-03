@@ -35,7 +35,7 @@
     "bootstrap": "^3.3.7",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.2",
-    "espina": "^1.0.4",
+    "espina": "^1.0.6",
     "font-awesome": "^4.7.0",
     "history": "^4.4.0",
     "i18next": "^3.4.4",

@@ -14,7 +14,7 @@ class HeaderComponent extends InfoComponent(SpikeComponent) {
 }
 
 HeaderComponent.propTypes = {
-	info: React.PropTypes.object.isRequired 
+	info: React.PropTypes.string.isRequired 
 };
 
 module.exports = HeaderComponent;

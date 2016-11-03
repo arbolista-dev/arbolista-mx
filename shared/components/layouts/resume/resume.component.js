@@ -13,7 +13,7 @@ class ResumeComponent extends SpikeComponent {
 }
 
 ResumeComponent.propTypes = {
-	info: React.PropTypes.object.isRequired,
+	info: React.PropTypes.string.isRequired,
 };
 
 module.exports= ResumeComponent;
