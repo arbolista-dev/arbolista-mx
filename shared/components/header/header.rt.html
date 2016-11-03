@@ -1,0 +1,50 @@
+    <header class="header">
+        <div class="top-bar container-fluid">
+            <div class="actions">
+                <a class="btn hidden-xs" href="mailto:someone@example.com"><i class="fa fa-paper-plane" aria-hidden="true"></i> Hire Us</a>
+                <!--a class="btn" href="#"><i class="fa fa-download" aria-hidden="true"></i> Download Our Resume</a-->
+            </div><!--//actions-->
+            <ul class="social list-inline">
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+            </ul><!--//social-->
+        </div><!--//top-bar-->
+        
+        <div class="intro">
+            <div class="container text-center">
+                <img class="profile-image" src="{this.getText('image')}" alt="">
+                <h1 class="name">{this.getText('name')}</h1>
+                <div class="title">{this.getText('title')}</div>
+                <div class="profile">
+                    <p>{this.getJoinText('summary')}</p>
+                </div><!--//profile-->
+            </div><!--//container-->
+        </div><!--//intro-->
+        
+        <div class="contact-info">
+            <div class="container text-center">
+                <ul class="list-inline">
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:{this.getText('email')}">{this.getText('email')}/a></li>
+                    <!--li><i class="fa fa-phone"></i> <a href="tel: 0123456789">0123 456 7890</a></li-->
+                    <!--li class="website"><i class="fa fa-globe"></i><a href="#" target="_blank">portfoliosite.com</a></li-->
+                </ul>
+            </div><!--//container-->
+        </div><!--//contact-info-->
+        
+        <div class="page-nav-space-holder hidden-xs">
+            <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+                <div class="container">
+                    <ul id="page-nav" class="nav page-nav list-inline">
+                        <li><a class="scrollto" href="#overview">Overview</a></li>
+                        <li><a class="scrollto" href="#experience">Projects</a></li>
+                        <li><a class="scrollto" href="#team">Our team</a></li>
+                        <li><a class="scrollto" href="#contact">Contact</a></li>
+                    </ul><!--//page-nav-->
+                </div>
+            </div><!--//page-nav-wrapper-->
+        </div>
+        
+    </header><!--//header-->
