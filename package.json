@@ -7,7 +7,7 @@
     "test": "node test.js",
     "develop": "BABEL_DISABLE_CACHE=1 NODE_ENV=development babel-node run.js",
     "production": "BABEL_DISABLE_CACHE=1 NODE_ENV=production babel-node run.js",
-    "design": "NODE_ENV=design npm start"
+    "design": "NODE_ENV=design babel-node run.js"
   },
   "repository": {
     "type": "git",
@@ -46,6 +46,7 @@
     "react": "^15.3.2",
     "react-redux": "^4.4.5",
     "react-templates": "^0.5.4",
+    "react-templates-loader": "^0.5.1",
     "redux": "^3.6.0",
     "redux-act": "^1.1.0",
     "redux-loop": "^2.2.2",
