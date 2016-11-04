@@ -1,36 +1,40 @@
 <section id="experience" class="experiences-section section">
   <h2 class="section-title">{this.section_title}</h2>
   <div class="timeline" rt-class="{'team-projects': this.is_resume}">
-      <div rt-if="this.is_resume" rt-repeat="experience in this.experiences" key="{experienceIndex}" class="item">
+      <div rt-if="this.is_resume" rt-repeat="experience in this.getText('projects')" key="{experienceIndex}" class="item">
           <div class="work-place">
               <h3 class="place">{experience.notes}</h3>
               <!-- <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Mountain View</div> -->
           </div>
           <div class="job-meta">
-              <div class="title">{experience.title}</div>
+              <div class="title"><a href="{experience.link}">{experience.title}</a></div>
               <!-- <div class="time">2016 - Present</div> -->
           </div><!--//job-meta-->
           <div class="job-desc">
-              <p><a href="{experience.link}">View project</a></p>
+              <p><a href="{experience.link}">{this.t('buttons.view_project')}</a></p>
           </div><!--//job-desc-->
       </div><!--//item-->
-      <div rt-if="!this.is_resume" rt-repeat="experience in this.experiences" key="{experienceIndex}" class="item">
+      <div rt-if="!this.is_resume" rt-repeat="experience in this.getText('experience')" key="{experienceIndex}" class="item">
           <div class="work-place">
-              <h3 class="place">Google</h3>
-              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Mountain View</div>
+              <h3 class="place">{experience.title}</h3>
+              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>{experience.location}</div>
           </div>
-          <div class="job-meta">
+          <!-- <div class="job-meta">
               <div class="title">Senior Software Engineer</div>
-              <div class="time">2016 - Present</div>
-          </div><!--//job-meta-->
+              <div class="time"> - Present</div>
+          </div> -->
           <div class="job-desc">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+              <p>{experience.summary}</p>
               <ul>
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Donec pede justo ante</li>
-                  <li>Maecenas tempus tellus eget </li>
+                  <li rt-repeat="detail in experience.details" key="{detailIndex}">{detail}</li>
               </ul>
           </div><!--//job-desc-->
+          <div class="skills-section">
+              <h3 class="subtitle">{this.t('Stack')}:</h3>
+              <div class="misc-skills">
+                  <span rt-repeat="skill in experience.skills" key="{skillIndex}" class="skill-tag">{skill}</span>
+              </div>
+          </div><!--//other-skills-->
       </div><!--//item-->
   </div><!--//timeline-->
 </section><!--//section-->

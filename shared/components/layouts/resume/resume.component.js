@@ -11,9 +11,8 @@ class ResumeComponent extends SpikeComponent {
     return template;
   }
 
-  get team_member(){
-    // return one of the three of us
-    return undefined;
+  get is_resume(){
+    return this.props.info === 'Resume';
   }
 
 }

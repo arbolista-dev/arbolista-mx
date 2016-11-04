@@ -17,10 +17,6 @@ class ExperienceComponent extends InfoComponent(SpikeComponent) {
 		return this.is_resume ? this.t('sections.projects') : this.t('sections.work_experience');
 	}
 
-	get experiences(){
-		return this.is_resume ? this.getText('projects') : this.getText('experience');
-	}
-
 }
 
 ExperienceComponent.propTypes = {

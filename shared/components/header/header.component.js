@@ -11,10 +11,14 @@ class HeaderComponent extends InfoComponent(SpikeComponent) {
 	get template(){
 		return template;
 	}
+
+	get experiences_title(){
+		return this.is_resume ? this.t('sections.projects') : this.t('sections.work_experience');
+	}
 }
 
 HeaderComponent.propTypes = {
-	info: React.PropTypes.string.isRequired 
+	info: React.PropTypes.string.isRequired
 };
 
 module.exports = HeaderComponent;

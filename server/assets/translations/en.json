@@ -2,15 +2,30 @@
   "name":"Arbolista",
   "title":"Development Agency",
   "image":"/assets/images/logo.png",
-  "email":"eric@arbol.org",
-  "summary": ["Web and mobile applications, typically with a focus on energy and environment.",
-    "Our portfolio of projects is expanding. Shared office space and technical coding support."],
+  "summary": [
+    "We are a group of three developers pooling over 15 years of web development experience working side by side in Mexico City.",
+    "This provides us the opportunity to develop shared processes and tools for efficient and quality development - a significant advantage over individual freelancing.",
+    "Currently, we are focused on development of web API services (in Ruby, Golang, and Node), as well as frontend Javascript development, mostly with with ReactJs. We also have growing experience with dynamic graphics developed in D3.",
+    "We are particularly interested in working with clients focused on developing solutions in renewable energy, energy efficiency, and other issues related sustainability."
+  ],
+  "skills": [
+    {
+      "title": "Web Services",
+      "details": ["API Development", "Ruby", "Golang", "Node"]
+    }, {
+      "title": "Web Applications",
+      "details": ["ReactJs", "AngularJs", "D3 Graphics", "Redux"]
+    }, {
+      "title": "Mobile",
+      "details": ["React Native", "Android", "iOS"]
+    }
+  ],
   "contact_invitation": [
     "I am currently looking for additional web contracts, especially with companies and organizations looking to increase their global presence and are interested in driving the global economy to a more sustainable one.",
     "If you are open to remote contracts, I will take communication responsibilities as seriously as my programming responsibilities. My end goal is not to write perfect code - my goal is to provide technical services and communicate so you can meet your goals quickly and effectively."
   ],
   "what_we_do": ["Web applications", "Mobile applications (iOS and Android)", "API development"],
-  "social_links": [
+  "links": [
       {
         "title": "GitHub",
         "href": "https://github.com/arbolista-dev"
@@ -35,10 +50,11 @@
   "members": [
     {
       "name": "Eric Hulburd",
-      "title":"CEO",
-      "nationality": "US",
+      "title": "Founder, fullstack developer",
+      "nationality": "USA",
       "image": "https://avatars.githubusercontent.com/Arbolista",
       "email":"eric@arbol.org",
+      "interests": ["music", "renewable energy"],
       "summary":[],
       "skills": [
         {
@@ -58,7 +74,8 @@
       "education": [
         {
           "university": "Stanford University",
-          "degree": "BS Environmental Engineering"
+          "degree": "BS Environmental Engineering",
+          "year": "2008"
         }
       ],
       "links": [
@@ -113,7 +130,6 @@
       "name": "Manuel Bergler",
       "title": "Full Stack Developer",
       "image": "https://avatars.githubusercontent.com/manue1",
-      "email": "manuel.bergler@gmail.com",
       "nationality": "German",
       "summary": "Is a passionate computer engineer with strong analytical skills who likes to work on projects with a positive impact.",
       "skills": [{
@@ -134,7 +150,8 @@
       }],
       "education": [{
           "university": "HTW Berlin",
-          "degree": "BEng Computer Engineering"
+          "degree": "BEng Computer Engineering",
+          "year": "2015"
       }],
       "links": [{
           "title": "Github",
@@ -145,6 +162,7 @@
       }],
       "experience": [{
           "title": "Arbolista",
+          "location": "Mexico City, Mexico",
           "summary": "Full Stack Developer doing day-to-day coding mostly in ES6 and Go.",
           "skills": ["React", "Redux", "Go", "Docker", "D3"],
           "link": "https://github.com/arbolista-dev/",
@@ -156,6 +174,7 @@
           ]
       }, {
           "title": "Skateistan",
+          "location": "Berlin, Germany",
           "summary": "Currently. Managing IT systems, organization-wide support, development of web applications and website",
           "skills": ["PHP (Drupal)", "Middleman", "SASS", "Sinatra", "AWS"],
           "link": "https://www.skateistan.org",
@@ -166,6 +185,7 @@
           ]
       }, {
           "title": "Fraunhofer FOKUS",
+          "location": "Berlin, Germany",
           "link": "https://www.fokus.fraunhofer.de/ngni",
           "skills": ["Python", "Angular", "OpenStack", "Shell"],
           "summary": "Developed an API to manage virtual network switches of machines within an OpenStack infrastructure.",
@@ -175,12 +195,11 @@
               "Visualization of current VM utilization of a OpenStack data center through a responsive Angular app."
           ]
       }],
-      "interests": ["skateboarding", "music", "food", "photography", "exploring the planet"]
+      "interests": ["skateboarding", "music", "food", "photography", "exploring the world"]
     },  {
       "name": "Daniel Cabello",
       "title":"Fullstack Developer",
       "image": "https://avatars.githubusercontent.com/DKbyo",
-      "email":"eric@arbol.org",
       "nationality": "Mexican",
       "summary": "A language-agnostic fullstack developer who loves open source",
       "skills": [
@@ -272,9 +291,12 @@
   "sections": {
     "overview": "Overview",
     "projects": "Projects",
+    "technical_skills": "Technical Skills",
     "work_experience": "Work experience",
     "our_team": "Our Team",
-    "contact": "Contact"
+    "contact": "Contact",
+    "education": "Education",
+    "interests": "Interests"
   },
   "buttons": {
     "view_project": "View project",

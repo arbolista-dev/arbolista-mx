@@ -1,9 +1,15 @@
-<rt-import name="*" as="Experience" from="shared/components/sections/experience/experience.component" />
-<rt-import name="*" as="Team" from="shared/components/sections/team/team.component" />
 <rt-import name="*" as="Contact" from="shared/components/sections/contact/contact.component" />
+<rt-import name="*" as="Education" from="shared/components/sections/education/education.component" />
+<rt-import name="*" as="Experience" from="shared/components/sections/experience/experience.component" />
+<rt-import name="*" as="Interests" from="shared/components/sections/interests/interests.component" />
+<rt-import name="*" as="Skills" from="shared/components/sections/skills/skills.component" />
+<rt-import name="*" as="Team" from="shared/components/sections/team/team.component" />
 
 <div id="resume" class="wrapper container">
+	<Skills info="{this.props.info}"/>
 	<Experience info="{this.props.info}"/>
-	<Team info="{this.props.info}"/>
-	<Contact info="{this.props.info}"/>
+	<Education rt-if="!this.is_resume" info="{this.props.info}"/>
+	<Team rt-if="this.is_resume" info="{this.props.info}"/>
+	<Contact rt-if="this.is_resume" info="{this.props.info}"/>
+	<Interests rt-if="!this.is_resume" info="{this.props.info}"/>
 </div>

@@ -1,8 +1,26 @@
 .experiences-section {
-  .team-projects {
-    margin-left: 320px;
-    .job-meta {
-      left: -320px;
+  .timeline {
+    margin-left: 6%;
+    padding: 0 6% 0 30px;
+
+    .skills-section {
+      .subtitle {
+        font-size: 1em;
+        font-style: italic;
+        margin-bottom: 10px;
+      }
+      .skill-tag {
+        font-size: 1em;
+      }
+    }
+
+    &.team-projects {
+      padding: 0 30px;
+      margin-left: 320px;
+      .job-meta {
+        left: -320px;
+      }
     }
   }
+
 }

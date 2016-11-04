@@ -1,0 +1,17 @@
+<section id="education" class="education-section section">
+    <h2 class="section-title">{this.t('sections.education')}</h2>
+    <div class="row">
+        <div rt-repeat="education in this.getText('education')" key="{educationIndex}" class="item col-xs-12">
+            <div class="item-inner">
+                <h3 class="degree">{education.degree}</h3>
+                <div class="education-body">
+                    {education.university}
+                </div><!--//education-body-->
+                <div class="time">{education.year}</div>
+                <!-- <div class="desc">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                </div> -->
+            </div><!--//item-inner-->
+        </div><!--//item-->
+    </div><!--//row-->
+</section><!--//section-->
