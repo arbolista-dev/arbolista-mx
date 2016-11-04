@@ -5,8 +5,18 @@
   "email":"eric@arbol.org",
   "summary": ["Web and mobile applications, typically with a focus on energy and environment.",
     "Our portfolio of projects is expanding. Shared office space and technical coding support."],
-  "technical": [],
-  "Projects": [
+  "contact_invitation": [
+    "I am currently looking for additional web contracts, especially with companies and organizations looking to increase their global presence and are interested in driving the global economy to a more sustainable one.",
+    "If you are open to remote contracts, I will take communication responsibilities as seriously as my programming responsibilities. My end goal is not to write perfect code - my goal is to provide technical services and communicate so you can meet your goals quickly and effectively."
+  ],
+  "what_we_do": ["Web applications", "Mobile applications (iOS and Android)", "API development"],
+  "social_links": [
+      {
+        "title": "GitHub",
+        "href": "https://github.com/arbolista-dev"
+      }
+  ],
+  "projects": [
     {
       "title": "Cool Climate Carbon Calculator",
       "link": "http://calculator.coolclimatenetwork.net/",
@@ -17,16 +27,17 @@
       "notes": "University of California wide carboon footprint competition headed by Cool Climate, UC Berkeley."
     }, {
       "title": "React Spike",
-      "link": "https://pledge.coolcampuschallenge.org/",
+      "link": "https://github.com/arbolista-dev/spike-docs#readme",
       "notes": "Open source project for bundling Javascript tools we use on our projects."
     }
 
   ],
-  "Members": [
+  "members": [
     {
       "name": "Eric Hulburd",
       "title":"CEO",
-      "image":"/assets/images/logo.png",
+      "nationality": "US",
+      "image": "https://avatars.githubusercontent.com/Arbolista",
       "email":"eric@arbol.org",
       "summary":[],
       "skills": [
@@ -98,11 +109,11 @@
           ]
         }
       ]
-    }, {
+    },{
       "name": "Manuel Bergler",
-      "title":"Fullstack Developer",
-      "image":"/assets/images/logo.png",
-      "email":"eric@arbol.org",
+      "title": "Full Stack Developer",
+      "image": "https://avatars.githubusercontent.com/manue1",
+      "email": "manuel.bergler@gmail.com",
       "nationality": "German",
       "summary": "Is a passionate computer engineer with strong analytical skills who likes to work on projects with a positive impact.",
       "skills": [{
@@ -164,11 +175,11 @@
               "Visualization of current VM utilization of a OpenStack data center through a responsive Angular app."
           ]
       }],
-      "interests": ["skateboarding", "music", "food", "exploring"]
+      "interests": ["skateboarding", "music", "food", "photography", "exploring the planet"]
     },  {
       "name": "Daniel Cabello",
       "title":"Fullstack Developer",
-      "image":"/assets/images/logo.png",
+      "image": "https://avatars.githubusercontent.com/DKbyo",
       "email":"eric@arbol.org",
       "nationality": "Mexican",
       "summary": "A language-agnostic fullstack developer who loves open source",
@@ -257,5 +268,22 @@
       ],
       "interests": ["travel", "tv series", "comics"]
     }
-  ]
+  ],
+  "sections": {
+    "overview": "Overview",
+    "projects": "Projects",
+    "work_experience": "Work experience",
+    "our_team": "Our Team",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "view_project": "View project",
+    "find_out_more": "Find out more",
+    "hire_us": "Hire us"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "help_with": "We can help with the following",
+    "drop_message": "Drop us a message at"
+  }
 }

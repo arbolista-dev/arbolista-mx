@@ -4,18 +4,15 @@ export default function(superclass){
 
   return class extends superclass {
 
+    get is_resume(){
+      return this.props.info === 'Resume';
+    }
+
     getText(key) {
-      /*let component = this;
-      let value;
-      if(component.props.info && key instanceof Array) 
-        value = component.props.info.getIn(["data",...key]);
-      else(component.props.info && key instanceof String) 
-        value = component.props.info.getIn(["data",key]);
-      return value ? value : "";*/
       const route = this.props.info;
-      if (route == "Resume")
-        return this.context.i18n.t(key);
-      return this.context.i18n.t(`Members.${alias[route]}.${key}`);
+      if (this.is_resume)
+        return this.context.i18n.t(key, {returnObjects: true});
+      return this.context.i18n.t(`members.${alias[route]}.${key}`, {returnObjects: true});
     }
 
     getJoinText(key) {
@@ -25,7 +22,6 @@ export default function(superclass){
         return text.join(" ");
       return text;
     }
-
   }
 
 }

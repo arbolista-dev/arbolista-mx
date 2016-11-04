@@ -1,0 +1,18 @@
+<section id="team" class="portfolio-section section">
+    <h2 class="section-title">Our Team</h2>
+    <div class="items-wrapper isotope row">
+      <div rt-repeat="member in this.getText('members')" class="item team-member col-xs-4" key="{memberIndex}">
+            <div class="item-inner">
+                <figure class="figure">
+                    <img class="img-responsive" src="{member.image}" alt="" />
+                </figure>
+                <div class="content text-left">
+                    <h3 class="sub-title"><a href="#">{member.name}</a></h3>
+                    <div class="meta">{member.title}</div>
+                    <div class="action"><a href="#">Find out more</a></div>
+                </div><!--//content-->
+                <a class="link-mask" href="#"></a>
+            </div><!--//item-inner-->
+        </div><!--//item-->
+    </div><!--//item-wrapper-->
+</section><!--//section-->

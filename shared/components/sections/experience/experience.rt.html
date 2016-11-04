@@ -1,0 +1,36 @@
+<section id="experience" class="experiences-section section">
+  <h2 class="section-title">{this.section_title}</h2>
+  <div class="timeline" rt-class="{'team-projects': this.is_resume}">
+      <div rt-if="this.is_resume" rt-repeat="experience in this.experiences" key="{experienceIndex}" class="item">
+          <div class="work-place">
+              <h3 class="place">{experience.notes}</h3>
+              <!-- <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Mountain View</div> -->
+          </div>
+          <div class="job-meta">
+              <div class="title">{experience.title}</div>
+              <!-- <div class="time">2016 - Present</div> -->
+          </div><!--//job-meta-->
+          <div class="job-desc">
+              <p><a href="{experience.link}">View project</a></p>
+          </div><!--//job-desc-->
+      </div><!--//item-->
+      <div rt-if="!this.is_resume" rt-repeat="experience in this.experiences" key="{experienceIndex}" class="item">
+          <div class="work-place">
+              <h3 class="place">Google</h3>
+              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Mountain View</div>
+          </div>
+          <div class="job-meta">
+              <div class="title">Senior Software Engineer</div>
+              <div class="time">2016 - Present</div>
+          </div><!--//job-meta-->
+          <div class="job-desc">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+              <ul>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Donec pede justo ante</li>
+                  <li>Maecenas tempus tellus eget </li>
+              </ul>
+          </div><!--//job-desc-->
+      </div><!--//item-->
+  </div><!--//timeline-->
+</section><!--//section-->

@@ -1,6 +1,5 @@
 /*global document window Promise console*/
 
-import 'bootstrap/dist/js/bootstrap.min';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import XHR from 'i18next-xhr-backend';

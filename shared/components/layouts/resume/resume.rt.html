@@ -1,4 +1,9 @@
-<rt-import name="*" as="Experience" from="shared/components/experience/experience.component" />
+<rt-import name="*" as="Experience" from="shared/components/sections/experience/experience.component" />
+<rt-import name="*" as="Team" from="shared/components/sections/team/team.component" />
+<rt-import name="*" as="Contact" from="shared/components/sections/contact/contact.component" />
+
 <div id="resume" class="wrapper container">
 	<Experience info="{this.props.info}"/>
+	<Team info="{this.props.info}"/>
+	<Contact info="{this.props.info}"/>
 </div>

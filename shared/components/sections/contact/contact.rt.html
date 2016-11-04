@@ -1,0 +1,25 @@
+<section id="contact" class="contact-section section">
+  <h2 class="section-title">{this.t('contact.title')}</h2>
+  <div class="intro">
+      <img class="profile-image" src="{this.getText('image')}" alt="">
+      <div class="dialog">
+          <p rt-repeat="p in this.getText('contact_invitation')" key="{pIndex}">{p}</p>
+          <p><strong>{this.t('contact.help_with')}:</strong></p>
+          <ul class="list-unstyled service-list">
+              <li rt-repeat="skill in this.getText('what_we_do')" key="{skillIndex}"><i class="fa fa-check" aria-hidden="true"></i> {skill}</li>
+          </ul>
+          <p>{this.t('contact.drop_message')} <a href="mailto:someone@example.com">someone@example.com</a></p>
+          <!-- <ul class="social list-inline">
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+          </ul> -->
+          <!--//social-->
+      </div>
+      <!--//diaplog-->
+  </div>
+  <!--//intro-->
+</section>
+<!--//section-->
