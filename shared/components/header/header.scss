@@ -1,3 +1,20 @@
 .header {
+  .toptal {
+    width: 12px;
+    height: 16px;
+    background-image: url('https://assets.toptal.io/assets/front/static/public/blocks/header/toptal_c5450c.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: brightness(500%);
+  }
 
+  .stack-overflow {
+    width: 25px;
+    height: 25px;
+    background-image: url('https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png');
+    background-size: contain;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    filter: brightness(700%);
+  }
 }

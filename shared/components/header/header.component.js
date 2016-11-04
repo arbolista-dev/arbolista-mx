@@ -15,6 +15,10 @@ class HeaderComponent extends InfoComponent(SpikeComponent) {
 	get experiences_title(){
 		return this.is_resume ? this.t('sections.projects') : this.t('sections.work_experience');
 	}
+
+	getSocialLinkClass(title){
+		return this.t(`icons.${title}`);
+	}
 }
 
 HeaderComponent.propTypes = {

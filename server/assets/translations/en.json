@@ -86,10 +86,10 @@
           "title": "LinkedIn",
           "href": "https://www.linkedin.com/in/eric-hulburd-8b025a39"
         }, {
-          "title": "Github",
+          "title": "GitHub",
           "href": "https://github.com/arbolista"
         }, {
-          "title": "Stackoverflow",
+          "title": "StackOverflow",
           "href": "http://stackoverflow.com/users/1149459/eric-h"
         }
       ],
@@ -154,7 +154,7 @@
           "year": "2015"
       }],
       "links": [{
-          "title": "Github",
+          "title": "GitHub",
           "href": "https://github.com/manue1"
       }, {
           "title": "LinkedIn",
@@ -234,10 +234,10 @@
           "title": "LinkedIn",
           "href": "https://www.linkedin.com/in/danyelcabello/en"
         }, {
-          "title": "Github",
+          "title": "GitHub",
           "href": "https://github.com/DKbyo"
         }, {
-          "title": "Stackoverflow",
+          "title": "StackOverflow",
           "href": "http://stackoverflow.com/users/2044583/danyel-darkcloud"
         }
       ],
@@ -307,5 +307,11 @@
     "title": "Get in touch",
     "help_with": "We can help with the following",
     "drop_message": "Drop us a message at"
+  },
+  "icons": {
+    "GitHub": "fa-github-alt",
+    "LinkedIn": "fa-linkedin",
+    "StackOverflow": "stack-overflow",
+    "Toptal": "toptal"
   }
 }

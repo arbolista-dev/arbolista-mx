@@ -31,7 +31,8 @@
             <div class="container text-center">
                 <ul class="list-inline">
                     <li rt-if="!this.is_resume" class="nationality"><i class="fa fa-flag"></i>{this.getText('nationality')}</li>
-                    <!-- <li class="email"><i class="fa fa-envelope"></i><a href="mailto:{this.getText('email')}">{this.getText('email')}</a></li> -->
+                    <li rt-repeat="link in this.getText('links')" key="{linkIndex}"><a href="{link.href}"><i class="fa {this.getSocialLinkClass(link.title)}"></i>{link.title}</a></li>
+
                     <!--li><i class="fa fa-phone"></i> <a href="tel: 0123456789">0123 456 7890</a></li-->
                     <!--li class="website"><i class="fa fa-globe"></i><a href="#" target="_blank">portfoliosite.com</a></li-->
                 </ul>
