@@ -4,8 +4,24 @@
 ```json
 {
 
-  "summary": [],
-  "technical": [],
+  "summary": [
+    "We are a group of three developers pooling over 15 years of web development experience working side by side in Mexico City.",
+    "This provides us the opportunity to develop shared processes and tools for efficient and quality development - a significant advantage over individual freelancing.",
+    "Currently, we are focused on development of web API services (in Ruby, Golang, and Node), as well as frontend Javascript development, mostly with with ReactJs. We also have growing experience with dynamic graphics developed in D3.",
+    "We are particularly interested in working with clients focused on developing solutions in renewable energy, energy efficiency, and other issues related sustainability."
+  ],
+  "technical": [
+    {
+      "title": "Web Services",
+      "details": ["API Development", "Ruby", "Golang", "Node"]
+    }, {
+      "title": "Web Appliications",
+      "details": ["ReactJs", "AngularJs", "D3 Graphics", "Redux"]
+    }, {
+      "title": "Mobile",
+      "details": ["React Native", "Android", "iOS"]
+    }
+  ],
   "Projects": [
     {
       "title": "Cool Climate Carbon Calculator",
@@ -20,11 +36,15 @@
       "link": "https://pledge.coolcampuschallenge.org/",
       "notes": "Open source project for bundling Javascript tools we use on our projects."
     }
-
   ],
   "Members": [
     {
       "name": "Eric Hulburd",
+      "title": "Founder, fullstack developer",
+      "nationality": "USA",
+      "interests": [
+        "music", "renewable energy"
+      ],
       "skills": [
         {
           "title": "Javascript",
@@ -43,7 +63,8 @@
       "education": [
         {
           "university": "Stanford University",
-          "degree": "BS Environmental Engineering"
+          "degree": "BS Environmental Engineering",
+          "year": "2008"
         }
       ],
       "links": [
