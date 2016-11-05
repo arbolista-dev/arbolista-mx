@@ -49,6 +49,7 @@
   ],
   "members": [
     {
+      "link":"eric",
       "name": "Eric Hulburd",
       "title": "Founder, fullstack developer",
       "nationality": "USA",
@@ -127,6 +128,7 @@
         }
       ]
     },{
+      "link":"manuel",
       "name": "Manuel Bergler",
       "title": "Full Stack Developer",
       "image": "https://avatars.githubusercontent.com/manue1",
@@ -197,6 +199,7 @@
       }],
       "interests": ["skateboarding", "music", "food", "photography", "exploring the world"]
     },  {
+      "link":"danyel",
       "name": "Daniel Cabello",
       "title":"Fullstack Developer",
       "image": "https://avatars.githubusercontent.com/DKbyo",

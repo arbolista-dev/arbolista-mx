@@ -15,9 +15,10 @@
     <div id="root"><%- prerender_content %></div>
 
     <% if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'design') { %>
-      <script src="http://localhost:3000/webpack-dev-server.js"></script>
+      <script src="/webpack-dev-server.js"></script>
+      <script src="/assets/app.js"></script>
     <% } %>
 
-    <script src="/assets/app.js"></script>
+   
   </body>
 </html>

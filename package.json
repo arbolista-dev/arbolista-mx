@@ -4,11 +4,16 @@
   "description": "Website of Arbolista MX",
   "main": "run.js",
   "scripts": {
+    "clean-production":"rm -rf ./build/production",
     "test": "node test.js",
     "develop": "BABEL_DISABLE_CACHE=1 NODE_ENV=development babel-node run.js",
-    "production": "BABEL_DISABLE_CACHE=1 NODE_ENV=production babel-node run.js",
-    "design": "NODE_ENV=design babel-node run.js"
-  },
+    "production": "npm run production-build && NODE_ENV=production node ./build/production/server/server.js",
+    "design": "NODE_ENV=design babel-node run.js",
+    "production-build":"npm run clean-production && npm run production-build-client && npm run production-build-server && npm run production-postbuild-server",
+    "production-build-client": "NODE_ENV=production webpack --progress --colors --display-error-details --config client/config/production/webpack.js",
+    "production-build-server": "NODE_ENV=production webpack --progress --colors --display-error-details --config client/config/production/webpack-server.js",
+    "production-postbuild-server": "cp -r ./server/views ./build/production/server/ && cp -r ./server/assets/translations ./build/production/assets/  && cp -r ./server/assets/images ./build/production/assets/"
+ },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arbolista-dev/arbolista-mx.git"

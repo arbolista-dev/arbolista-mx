@@ -1,7 +1,7 @@
 /*global __dirname module*/
 
-import webpack from 'webpack';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
+var webpack =require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const CLIENT = __dirname + '/../..';
 const ROOT = CLIENT + '/..';
@@ -15,12 +15,13 @@ module.exports = {
   devtool: 'source-map',
   output: {
     filename: '[name].js',
-    path: __dirname + '/../../../build/development'
+    path: __dirname + '/../../../build/production/assets'
   },
   module: {
     loaders: [
       {
         test: /\.js$/,
+        exclude:/\.test\.js$/,
         loader: 'babel'
       }, {
         test: /\.scss$/,
@@ -30,12 +31,12 @@ module.exports = {
         loader: ExtractTextPlugin.extract('style', 'css?sourceMap=true')
       }, {
         test: /\.json$/,
-        loader: 'json'
+        loader: 'json-loader'
       }, {
         test: /\.png$/,
         loader: 'url-loader?limit=100000'
       }, {
-        test: /\.jpg$/,
+        test: /(\.jpg|\.ico)$/,
         loader: 'file-loader'
       }, {
         test: /\.otf$/,
@@ -57,7 +58,10 @@ module.exports = {
         loader: 'url?limit=10000&mimetype=image/svg+xml'
       }, {
         test: /\.rt\.html$/,
-        loader: 'react-templates-loader?targetVersion=0.14.0'
+        loader: 'react-templates-loader?modules=amd'
+      },{
+        test: /(\.test\.js|\.log|\.md)$/,
+        loader: 'null-loader'
       }
     ]
   },

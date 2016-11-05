@@ -1,4 +1,4 @@
-import 'jquery.scrollto/jquery.scrollTo.min';
+import 'jquery.scrollto';
 
 $(document).ready(function() {
 
