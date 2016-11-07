@@ -9,7 +9,7 @@ const ROOT = CLIENT + '/..';
 // Identical to development webpack config, except minified.
 module.exports = {
   entry: {
-    app: __dirname + '/../development/entry',
+    app: __dirname + '/../production/entry',
     style: __dirname + '/../development/style'
   },
   devtool: 'source-map',
