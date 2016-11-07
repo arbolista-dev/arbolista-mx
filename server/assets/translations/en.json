@@ -304,7 +304,9 @@
   "buttons": {
     "view_project": "View project",
     "find_out_more": "Find out more",
-    "hire_us": "Hire us"
+    "hire_us": "Hire us",
+    "next_language":"Español",
+    "next_language_url":"es"
   },
   "contact": {
     "title": "Get in touch",

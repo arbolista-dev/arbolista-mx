@@ -19,6 +19,12 @@ class HeaderComponent extends InfoComponent(SpikeComponent) {
 	getSocialLinkClass(title){
 		return this.t(`icons.${title}`);
 	}
+
+	get nextLanguageLink() {
+		let component = this;
+		let link = component.getText('link');
+		return (link!="link")? `/${component.t('buttons.next_language_url')}/${link}` : `/${component.t('buttons.next_language_url')}`
+	}
 }
 
 HeaderComponent.propTypes = {

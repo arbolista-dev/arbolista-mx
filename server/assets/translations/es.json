@@ -1,0 +1,300 @@
+{
+  "name": "Arbolista",
+  "title": "Agencia de desarrollo",
+  "image": "/assets/images/logo.png",
+  "summary": [
+    "Somos un grupo de tres desarrolladores con mas de 15 años de experiencia en desarrollo web trabajando lado a lado en la ciudad de México",
+    "Esto nos provee la oportunidad de desarrollar procesos compartidos y herramientas para un desarrollo eficiente y de calidad - una ventaja significativa sobre el freelancing individual",
+    "Actualmente, estamos enfocados en el desarrollo de web API services (en Ruby, Golang y Node), así como desarrollo frontend Javascript, principalmente en ReactJs. Tambien tenemos experiencia en gráficos dinámicos desarrollados en D3.",
+    "Estamos particularmente interesados en trabajar con clientes enfocados en desarrollar soluciones en energía renovable, eficiencia energética y otros temas relacionados a la sustentabilidad."
+  ],
+  "skills": [{
+    "title": "Web Services",
+    "details": ["API Development", "Ruby", "Golang", "Node"]
+  }, {
+    "title": "Web Applications",
+    "details": ["ReactJs", "AngularJs", "D3 Graphics", "Redux"]
+  }, {
+    "title": "Mobile",
+    "details": ["React Native", "Android", "iOS"]
+  }],
+  "contact_invitation": [
+    "Actualmente estoy buscando nuevos contratos web, especialmente con compañías y organizaciones buscando incrementar su presencia global e interesados en impulsar la economía global a una mas sustentable.",
+    "Si tu estas abierto a contratos remotos, Yo tomare seriamente la responsabilidad de la comunicación tanto como mis responsabilidades de desarrollo, Mi meta no es escribir código perfecto - mi meta es proveer servicios técnicos, una buena comunicación, para que así puedas alcanzar tus metas lo mas rapido y eficazmente posible."
+  ],
+  "what_we_do": ["Web applications", "Mobile applications (iOS and Android)", "API development"],
+  "links": [{
+    "title": "GitHub",
+    "href": "https://github.com/arbolista-dev"
+  }],
+  "projects": [{
+      "title": "Cool Climate Carbon Calculator",
+      "link": "http://calculator.coolclimatenetwork.net/",
+      "notes": "Implementación de la calculadora de carbono Cool Climate de la Universidad de Berkeley con React and Webpack."
+
+    }, {
+      "title": "Cool Campus Challenge 2016",
+      "link": "https://pledge.coolcampuschallenge.org/",
+      "notes": "Competición de huella de carbono de la Universidad de California organizada por Cool Climate, Universidad de Berkeley"
+
+    }, {
+      "title": "React Spike",
+      "link": "https://github.com/arbolista-dev/spike-docs#readme",
+      "notes": "Proyecto Open source para la construcción de herramientas Javascript que usamos en nuestros proyectos."
+    }
+
+  ],
+  "members": [{
+    "link": "eric",
+    "name": "Eric Hulburd",
+    "title": "Fundador, fullstack developer",
+    "nationality": "USA",
+    "image": "https://avatars.githubusercontent.com/Arbolista",
+    "email": "eric@arbol.org",
+    "interests": ["música", "energía renovable"],
+    "summary": [],
+    "skills": [{
+      "title": "Javascript",
+      "details": ["React", "Angular", "ExpressJs", "Webpack", "Redux"]
+    }, {
+      "title": "Ruby",
+      "details": ["Rails", "Sinatra"]
+    }, {
+      "title": "Python",
+      "details": ["Django"]
+    }, {
+      "title": "Other",
+      "details": ["Shopify API", "Stripe API", "Facebook API"]
+    }],
+    "education": [{
+      "university": "Universidad de Stanford",
+      "degree": "BS Environmental Engineering",
+      "year": "2008"
+    }],
+    "links": [{
+      "title": "Toptal",
+      "href": "https://www.toptal.com/resume/eric-hulburd"
+    }, {
+      "title": "LinkedIn",
+      "href": "https://www.linkedin.com/in/eric-hulburd-8b025a39"
+    }, {
+      "title": "GitHub",
+      "href": "https://github.com/arbolista"
+    }, {
+      "title": "StackOverflow",
+      "href": "http://stackoverflow.com/users/1149459/eric-h"
+    }],
+    "experience": [{
+      "title": "Analytics Fire",
+      "summary": "Actualmente, mi principal cliente.",
+      "skills": ["Ruby on Rails", "Sinatra", "React", "Express", "Stripe API", "Shopify API"],
+      "link": "http://afdc.co/",
+      "details": [
+        "Fullstack developer de basilhealth.com, incluyendo arquitectura backend y frontend, así como su plataforma e-commerce.",
+        "Desarrollador Rails en muchos de los proyectos internos de Supower Corporation"
+      ]
+    }, {
+      "title": "Oroeco",
+      "summary": "Fullstack developer de Oroeco.com – una plataforma que estima la huella de carbono basada en encuestas e información financiera.",
+      "skills": ["Ruby on Rails", "Angular", "Heroku"],
+      "link": "https://www.oroeco.com",
+      "details": [
+        "Calculos de huella de carbono basado en información de encuestas.",
+        "Interfaz dinámica de usuario para encuestas.",
+        "Cálculos de huella de carbono basado en información de la utilería Green Button (un standard DOE XML)",
+        "Gráficos dinámicos para la visualización de consumo de energía",
+        "Desarrollo de API para las aplicaciones móviles de Oreoco",
+        "Implementación de características de redes sociales (Facebook, Twitter, Google, LinkedIn API)"
+      ]
+    }, {
+      "title": "Other Web",
+      "link": "https://othermachine.co/",
+      "summary": "Desarrollo de un API de pagos a través de Amazon AWS para una startup de impresión 3D, Construcción de un proxy en Heroku usando NodeJS para asegurar los pagos.",
+      "details": [
+        "Servidor expressjs para seguimiento de pre-ordenes para la maquina de impresión 3D",
+        "Integración del API de pagos de Amazon"
+      ]
+    }]
+  }, {
+    "link": "manuel",
+    "name": "Manuel Bergler",
+    "title": "Full Stack Developer",
+    "image": "https://avatars.githubusercontent.com/manue1",
+    "nationality": "Aleman",
+    "summary": "Es un apasionado ingeniero de sistemas con fuertes habilidades analíticas que gusta de trabajar en proyectos con un impacto positivo.",
+    "skills": [{
+      "title": "Javascript",
+      "details": ["React", "Express", "Redux", "Angular", "GraphQL", "D3"]
+    }, {
+      "title": "Python",
+      "details": ["Bottle", "Django"]
+    }, {
+      "title": "Ruby",
+      "details": ["Middleman", "Rails", "Sinatra"]
+    }, {
+      "title": "Go",
+      "details": ["Revel"]
+    }, {
+      "title": "Systems",
+      "details": ["PayPal API", "Docker", "Postgres", "OpenStack", "Linux administration"]
+    }],
+    "education": [{
+      "university": "HTW Berlin",
+      "degree": "BEng Computer Engineering",
+      "year": "2015"
+    }],
+    "links": [{
+      "title": "GitHub",
+      "href": "https://github.com/manue1"
+    }, {
+      "title": "LinkedIn",
+      "href": "https://www.linkedin.com/in/manuelbergler"
+    }],
+    "experience": [{
+      "title": "Arbolista",
+      "location": "Mexico City, Mexico",
+      "summary": "Full Stack Developer programando principalmente en ES6 and Go.",
+      "skills": ["React", "Redux", "Go", "Docker", "D3"],
+      "link": "https://github.com/arbolista-dev/",
+      "details": [
+        "Implementar varios componentes y mejoras para la calculadora de huella de carbono de CoolClimate incluyendo una reestructuración completa usando Redux para el manejo del estado del App.",
+        "Extender la API en Revel, usando para guardar los datos del usuario en la calculadora de huella de carbono.",
+        "Desarrollar varios tipos de graficas D3 como objetos en una librería open source publicada en NPM",
+        "Implementar un prototipo de un API basada en GraphQL"
+      ]
+    }, {
+      "title": "Skateistan",
+      "location": "Berlin, Germany",
+      "summary": "Actualmente. Administrando sistemas, soporte a toda la organización, desarrollo de aplicaciones web y de la pagina web.",
+      "skills": ["PHP (Drupal)", "Middleman", "SASS", "Sinatra", "AWS"],
+      "link": "https://www.skateistan.org",
+      "details": ["Actualmente desarrollando un nuevo sitio web estático basado en Middleman usando API Stripe para donaciones e integración con SalesForce CRM", "Programar plantillas de noticias responsivas",
+        "Desarrollo de un sitio web responsivo en Drupal 7.",
+        "Co-desarrollo de 'Citizens of Skateistan' un generador de perfiles basado en Node"
+      ]
+    }, {
+      "title": "Fraunhofer FOKUS",
+      "location": "Berlin, Germany",
+      "link": "https://www.fokus.fraunhofer.de/ngni",
+      "skills": ["Python", "Angular", "OpenStack", "Shell"],
+      "summary": "Desarrollo de un API para manejar los switches de una red virtual sobre maquinas con infraestructura OpenStack.",
+      "details": [
+        "Implemntación de REST API en python que manejan el SDN con OpenStack.",
+        "Desarrollo de una aplicación Angular para desplegar plantilla de Heat stacks.",
+        "Visualización de la utilización de un data center con OpenStack a través de una aplicación responsiva en Angular."
+      ]
+    }],
+    "interests": ["patinaje", "musica", "comida", "fotografía", "explorar el mundo"]
+  }, {
+    "link": "danyel",
+    "name": "Daniel Cabello",
+    "title": "Fullstack Developer",
+    "image": "https://avatars.githubusercontent.com/DKbyo",
+    "nationality": "Mexicano",
+    "summary": "Fullstack devloper agnóstico del lenguaje que ama el Opensource",
+    "skills": [{
+      "title": "Javascript",
+      "details": ["React", "Angular", "React Native", "Redux", "Phonegap"]
+    }, {
+      "title": "Java",
+      "details": ["SpringMVC", "Hibernate", "MyBatis", "JSF", "Struts"]
+    }, {
+      "title": "iOS",
+      "details": ["CoreAnimation", "CoreData", "CoreLocation", "AutoLayout"]
+    }, {
+      "title": "Android",
+      "details": ["Google API", "Fragments", "ORMLite", "Retrofit", "Material Design"]
+    }, {
+      "title": "Python",
+      "details": ["Django"]
+    }, {
+      "title": "Other",
+      "details": ["Paypal API", "Twitter API", "Facebook API", "Google Maps API", "Google Apps Script", "Apache Camel"]
+    }],
+    "education": [{
+      "university": "Escuela Superior de Computo",
+      "degree": "BS Software Engineering"
+    }],
+    "links": [{
+      "title": "LinkedIn",
+      "href": "https://www.linkedin.com/in/danyelcabello/en"
+    }, {
+      "title": "GitHub",
+      "href": "https://github.com/DKbyo"
+    }, {
+      "title": "StackOverflow",
+      "href": "http://stackoverflow.com/users/2044583/danyel-darkcloud"
+    }],
+    "experience": [{
+      "title": "Arbolista",
+      "summary": "Full Stack Developer para Cool Climate Network ",
+      "skills": ["React", "Facebook API", "Redux"],
+      "link": "http://www.arbolista.mx/",
+      "details": [
+        "Fullstack developer parte de http://coolclimate.berkeley.edu, incluyendo el backend y frontend.",
+        "Aportador de varios proyectos OpenSource de la compañia."
+      ]
+    }, {
+      "title": "Sura Seguros",
+      "summary": "Líder técnico de la actualización de sistemas web.",
+      "skills": ["Java", "Javascript", "Python", "Camel", "Kubernetes", "Docker", "Android"],
+      "link": "https://www.segurossura.com.mx/",
+      "details": [
+        "Lider tecnico de todos los proyectos de migración.",
+        "Establecer las nueva arquitectura web basada en kubernetes y micro servicios en múltiples lenguajes",
+        "Crear la primera aplicación android en la compañía para seguimiento en tiempo real de ajustadores",
+        "Coordinar la fusión tecnológica de RSA-SURA",
+        "Desarrollo API de las plataformas de auto-servicio"
+      ]
+    }, {
+      "title": "GNP Seguros",
+      "link": "http://app.gnp.com.mx/",
+      "skills": ["Java", "Javascript", "Android", "iOS"],
+      "summary": "Líder técnico del laboratorio de desarrollo móvil.",
+      "details": [
+        "Crear todas las aplicaciones hibridas y móviles en la compañía.",
+        "Desarrollo del API para las aplicaciones móviles."
+      ]
+    }, {
+      "title": "RyAC",
+      "link": "",
+      "skills": ["Java", "C#", "Javascript"],
+      "summary": "Fullstack developer del switch transaccional",
+      "details": [
+        "Fullstack developer en todos los proyectos de la startup",
+        "Desarrollo del API para el switch transaccional",
+        "Desarrollo del API de socket de bajo nivel, para el manejo de GPS protocolos",
+        "Crear algunas aplicaciones móviles para el seguimiento GPS y realizar recargas telefonicas."
+      ]
+    }],
+    "interests": ["viajar", "series de tv", "comics"]
+  }],
+  "sections": {
+    "overview": "Resumen",
+    "projects": "Proyectos",
+    "technical_skills": "Habilidades técnicas",
+    "work_experience": "Experiencia",
+    "our_team": "Nuestro equipo",
+    "contact": "Contacto",
+    "education": "Educación",
+    "interests": "Intereses"
+  },
+  "buttons": {
+    "view_project": "Ver proyecto",
+    "find_out_more": "Saber más",
+    "hire_us": "Contrátanos",
+    "next_language":"English",
+    "next_language_url":"en"
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "help_with": "Podemos ayudarte con",
+    "drop_message": "Déjanos un mensaje en"
+  },
+  "icons": {
+    "GitHub": "fa-github-alt",
+    "LinkedIn": "fa-linkedin",
+    "StackOverflow": "stack-overflow",
+    "Toptal": "toptal"
+  }
+}

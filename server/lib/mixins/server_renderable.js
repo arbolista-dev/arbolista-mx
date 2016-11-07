@@ -59,11 +59,25 @@ export default function(superclass){
         pathname: req.path,
         query: req.query
       };
-      return new Promise((resolve) => resolve())
+      let parseLocation;
+      return new Promise((resolve) => {
+          parseLocation =fromJS(router.parseLocation(location));
+          //Change language
+          let language = parseLocation.getIn(["params","language"]);
+          if (language) {
+            i18n.changeLanguage(language, () => {
+
+              resolve();
+            });
+          }else{
+            resolve();
+          }
+        })
         .then(() => {
           let initial_state = StateManager.initialState({
-            location: fromJS(router.parseLocation(location))
+            location: parseLocation
           }, req.cookies);
+        
           return state_manager.initializeStore(initial_state,reducers);
         })
         .then(()=>{
@@ -73,7 +87,6 @@ export default function(superclass){
             i18n: i18n,
             rootComponent: LayoutComponent
           };
-
           let application = React.createFactory(ApplicationComponent)(props),
               prerender_content = ReactDOMServer.renderToString(application);
           return prerender_content;
