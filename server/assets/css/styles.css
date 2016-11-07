@@ -25,7 +25,7 @@ h6 {
   font-weight: 500;
 }
 a {
-  color: #00BCD4;
+  color: #607D8B;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -33,7 +33,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #007888;
+  color: #41545e;
 }
 a:focus {
   text-decoration: none;
@@ -43,7 +43,7 @@ p {
 }
 .btn,
 a.btn {
-  background: #008fa1;
+  background: #4b626d;
   color: #fff;
   padding: 8px 15px;
   -webkit-border-radius: 2px;
@@ -64,14 +64,14 @@ a.btn {
 .btn:hover,
 a.btn:hover {
   color: #fff;
-  background: #00a5bb;
+  background: #566f7c;
 }
 #topcontrol {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
-  background: #008fa1;
+  background: #4b626d;
   color: #fff;
   text-align: center;
   display: inline-block;
@@ -91,7 +91,7 @@ a.btn:hover {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
 }
 #topcontrol:hover {
-  background: #007888;
+  background: #41545e;
   color: #fff;
 }
 #topcontrol .fa {
@@ -101,7 +101,7 @@ a.btn:hover {
   font-weight: normal;
 }
 .header {
-  background: #00BCD4;
+  background: #607D8B;
   color: #fff;
 }
 .header a {
@@ -171,7 +171,7 @@ a.btn:hover {
   margin-bottom: 30px;
 }
 .header .intro {
-  background: #00a5bb;
+  background: #566f7c;
   padding-top: 90px;
   padding-bottom: 60px;
   position: relative;
@@ -182,7 +182,7 @@ a.btn:hover {
   margin: 0 auto;
 }
 .header .contact-info {
-  background: #008fa1;
+  background: #4b626d;
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 16px;
@@ -212,7 +212,7 @@ a.btn:hover {
   position: relative;
 }
 .page-nav-wrapper {
-  background: #007888;
+  background: #41545e;
   padding-top: 20px;
   padding-bottom: 20px;
   position: absolute;
@@ -228,7 +228,7 @@ a.btn:hover {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #00BCD4;
+  background: #607D8B;
 }
 .page-nav-wrapper a {
   color: rgba(255, 255, 255, 0.6);
@@ -297,7 +297,7 @@ a.btn:hover {
   text-align: center;
 }
 .timeline {
-  border-left: 3px solid #00BCD4;
+  border-left: 3px solid #607D8B;
   border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
   position: relative;
@@ -328,7 +328,7 @@ a.btn:hover {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: #fff;
-  border: 3px solid #00BCD4;
+  border: 3px solid #607D8B;
 }
 .timeline .item:after {
   content: "";
@@ -346,7 +346,7 @@ a.btn:hover {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #00BCD4;
+  background: #607D8B;
   z-index: 10;
 }
 .timeline .work-place {
@@ -374,7 +374,7 @@ a.btn:hover {
 }
 .timeline .job-meta .title {
   font-size: 18px;
-  color: #00BCD4;
+  color: #607D8B;
 }
 .timeline .job-meta .time {
   color: #8a8a8a;
@@ -390,7 +390,7 @@ a.btn:hover {
 }
 .education-section .degree {
   font-size: 18px;
-  color: #00BCD4;
+  color: #607D8B;
   margin-top: 0;
   margin-bottom: 0px;
 }
@@ -490,7 +490,7 @@ a.btn:hover {
   width: 36px;
   height: 36px;
   display: inline-block;
-  background: #00BCD4;
+  background: #607D8B;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -517,7 +517,7 @@ a.btn:hover {
   margin-right: 5px;
 }
 .testimonials-section .carousel-indicators li.active {
-  background-color: #00BCD4;
+  background-color: #607D8B;
   width: 10px;
   height: 10px;
   margin: 0;
@@ -545,14 +545,14 @@ a.btn:hover {
   margin-right: 0;
 }
 .portfolio-section .filters .type.active {
-  color: #00BCD4;
-  border-bottom: 2px solid #00BCD4;
+  color: #607D8B;
+  border-bottom: 2px solid #607D8B;
 }
 .portfolio-section .item {
   margin-bottom: 30px;
 }
 .portfolio-section .item-inner {
-  background: #00BCD4;
+  background: #607D8B;
   color: #fff;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -568,7 +568,7 @@ a.btn:hover {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
 .portfolio-section .item-inner:hover {
-  background: #00c5de;
+  background: #648291;
 }
 .portfolio-section .item-inner:hover img {
   -webkit-opacity: 0.9;
@@ -629,7 +629,7 @@ a.btn:hover {
   margin-bottom: 15px;
 }
 .contact-section .service-list .fa {
-  color: #00BCD4;
+  color: #607D8B;
 }
 .contact-section .social {
   margin-bottom: 0;
@@ -647,7 +647,7 @@ a.btn:hover {
   color: #8a8a8a;
 }
 .contact-section .social a:hover {
-  color: #00BCD4;
+  color: #607D8B;
 }
 .footer .container {
   padding: 30px;
