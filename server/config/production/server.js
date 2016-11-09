@@ -24,11 +24,9 @@ class Server extends serverRenderable(ServerBase) {
     //webpack(webpack_config, function(err, stats) {
     
       server.config();
-      server.app.use('/assets', express.static(path.resolve(__dirname, '../assets')));
       server.app.set('views', path.resolve(__dirname, 'views'));
-
       server.app.listen(APP_PORT, () => {
-        console.info(`App is now running on ${os.hostname()}`);
+        console.info(`App is now running on http://localhost:${APP_PORT}`);
       });
     //});
   }

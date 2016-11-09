@@ -14,11 +14,6 @@ class TeamComponent extends InfoComponent(SpikeComponent) {
 		return template;
 	}
 
-	goToMember(index){
-		const route = Object.keys(alias).filter((key) => { return alias[key] === index })[0];
-		this.pushRoute(route);
-	}
-
 }
 
 TeamComponent.propTypes = {
