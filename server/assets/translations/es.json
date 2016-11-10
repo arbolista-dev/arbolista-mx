@@ -289,7 +289,18 @@
   "contact": {
     "title": "Contáctenos",
     "help_with": "Podemos ayudarte con",
-    "drop_message": "Déjanos un mensaje en"
+    "drop_message": "Déjanos un mensaje en",
+    "name": "Tu nombre completo",
+    "email": "Tu correo",
+    "message": "¿Qué proyecto tienes en mente para ser desarrollado por nosotros?",
+    "submit": "Enviar",
+    "success": "Tu mensaje ha sido enviado. Nos pondremos en contacto contigo pronto!",
+    "error": "Por favor, asegúrete de que todos los campos de formulario estén llenados y hayas demostrado que no eres un robot.",
+    "labels": {
+      "name": "Nombre",
+      "email": "Correo",
+      "message": "Mensaje"
+    }
   },
   "icons": {
     "GitHub": "fa-github-alt",
