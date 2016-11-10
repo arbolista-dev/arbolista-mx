@@ -79,7 +79,10 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'window.NODE_ENV': `"${process.env.NODE_ENV}"`,
-      'window.BASE_URL': `"${process.env.API_BASE_URL}"`
+      CAPTCHA_SITE_KEY: `"${process.env.CAPTCHA_SITE_KEY}"`,
+      CAPTCHA_SECRET_KEY: `"${process.env.CAPTCHA_SECRET_KEY}"`,
+      SENDGRID_TOKEN: `"${process.env.SENDGRID_TOKEN}"`,
+      SENDGRID_TEMPLATE_ID: `"${process.env.SENDGRID_TEMPLATE_ID}"`,
     })
   ],
   node: {
@@ -94,4 +97,3 @@ module.exports = {
     }
   }
 }
-

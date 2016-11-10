@@ -311,7 +311,18 @@
   "contact": {
     "title": "Get in touch",
     "help_with": "We can help with the following",
-    "drop_message": "Drop us a message at"
+    "drop_message": "Drop us a message at",
+    "name": "Your full name",
+    "email": "Your email address",
+    "message": "What project are you looking to get developed by us?",
+    "submit": "Send",
+    "success": "Your message has been sent. We'll get back to you shortly!",
+    "error": "Please make sure all form fields are filled and you've proven not to be a robot.",
+    "labels": {
+      "name": "Name",
+      "email": "Email address",
+      "message": "Message"
+    }
   },
   "icons": {
     "GitHub": "fa-github-alt",

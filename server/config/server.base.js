@@ -2,11 +2,12 @@
 
 import express from 'express';
 import cookieParser from 'cookie-parser';
+import bodyParser from 'body-parser';
 import path from 'path';
 import favicon from 'serve-favicon';
 import logger from 'morgan';
 import Backend from 'i18next-node-fs-backend';
-
+import sendMail from 'server/lib/mail';
 import i18nFactory from 'shared/lib/i18n/i18nFactory';
 
 class ServerBase {
@@ -16,9 +17,11 @@ class ServerBase {
         app = server.app;
 
     app.use(cookieParser());
+    app.use(bodyParser.urlencoded({extended:false}))
+    app.use(bodyParser.json());
+
     // serve public static files.
     app.use('/', express.static(path.resolve(__dirname, '../../client/build', process.env.NODE_ENV)));
-    console.log(path.resolve(__dirname, '../assets'));
     app.use('/assets', express.static(path.resolve(__dirname, '../assets')));
 
     //app.use(favicon(__dirname + '/../assets/favicon.ico'));
@@ -27,6 +30,12 @@ class ServerBase {
     // view engine set up
     app.set('view engine', 'ejs');
     app.set('views', path.resolve(__dirname, '..', 'views'));
+
+    app.post('/sendmail', (req, res)=>{
+      sendMail(req.body)
+        .then(api_res => res.sendStatus(api_res.status))
+        .catch(api_err => res.sendStatus(api_err.status))
+    })
 
     app.get('*', server.handleRequest.bind(server));
   }
