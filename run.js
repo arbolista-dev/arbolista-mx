@@ -7,7 +7,6 @@ import path from 'path';
 import { argv } from 'yargs';
 
 GLOBAL.NODE_ENV = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-GLOBAL.CAPTCHA_SITE_KEY = process.env.CAPTCHA_SITE_KEY;
 GLOBAL.CAPTCHA_SECRET_KEY = process.env.CAPTCHA_SECRET_KEY;
 GLOBAL.SENDGRID_TOKEN = process.env.SENDGRID_TOKEN;
 GLOBAL.SENDGRID_TEMPLATE_ID = process.env.SENDGRID_TEMPLATE_ID;

@@ -24,7 +24,7 @@ class ContactComponent extends InfoComponent(SpikeComponent) {
 	}
 
 	get captcha_site_key(){
-		return CAPTCHA_SITE_KEY;
+		return '6LeligsUAAAAAHUirKAOYpvPo6VodaQ4PSdYpNQ_';
 	}
 
 	updateInput(event) {
