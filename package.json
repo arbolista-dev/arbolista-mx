@@ -1,6 +1,6 @@
 {
   "name": "arbolista-mx",
-  "version": "1.0.x",
+  "version": "1.0.1",
   "description": "Website of Arbolista MX",
   "main": "run.js",
   "scripts": {
