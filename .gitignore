@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+build/
+server/bin/
+bin/
+npm-debug.log
+*.rt.js
+.env

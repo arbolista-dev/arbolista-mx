@@ -1,0 +1,76 @@
+{
+  "name": "arbolista-mx",
+  "version": "1.0.x",
+  "description": "Website of Arbolista MX",
+  "main": "run.js",
+  "scripts": {
+    "clean-production": "rm -rf ./build/production",
+    "test": "node test.js",
+    "develop": "BABEL_DISABLE_CACHE=1 NODE_ENV=development babel-node run.js",
+    "production": "npm run production-build && NODE_ENV=production node ./build/production/server/server.js",
+    "design": "NODE_ENV=design babel-node run.js",
+    "production-build": "npm run clean-production && npm run production-build-client && npm run production-build-server && npm run production-postbuild-server",
+    "production-build-client": "NODE_ENV=production webpack --progress --colors --display-error-details --config client/config/production/webpack.js",
+    "production-build-server": "NODE_ENV=production webpack --progress --colors --display-error-details --config client/config/production/webpack-server.js",
+    "production-postbuild-server": "cp -r ./server/views ./build/production/server/ && cp -r ./server/assets/translations ./build/production/assets/  && cp -r ./server/assets/images ./build/production/assets/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arbolista-dev/arbolista-mx.git"
+  },
+  "keywords": [
+    "website",
+    "arbolista",
+    "bootstrap"
+  ],
+  "author": "Eric Hulburd <eric@arbol.org> (http://www.arbolista.mx/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arbolista-dev/arbolista-mx/issues"
+  },
+  "homepage": "https://github.com/arbolista-dev/arbolista-mx#readme",
+  "dependencies": {
+    "app-module-path": "2.1.x",
+    "babel-core": "6.18.x",
+    "babel-loader": "6.2.x",
+    "babel-plugin-module-alias": "1.4.x",
+    "babel-plugin-react-templates": "2.0.x",
+    "babel-preset-es2015": "6.18.x",
+    "babel-preset-react": "6.16.x",
+    "body-parser": "1.15.x",
+    "bootstrap": "3.3.x",
+    "cookie-parser": "1.4.x",
+    "css-loader": "0.25.x",
+    "dotenv": "2.0.x",
+    "ejs": "2.5.x",
+    "espina": "1.0.x",
+    "extract-text-webpack-plugin": "1.0.x",
+    "file-loader": "0.9.x",
+    "font-awesome": "4.7.x",
+    "history": "4.4.x",
+    "i18next": "3.4.x",
+    "i18next-node-fs-backend": "0.1.x",
+    "i18next-xhr-backend": "1.2.x",
+    "jquery": "3.1.x",
+    "jquery.scrollto": "2.1.x",
+    "morgan": "1.7.x",
+    "sass-loader": "4.0.x",
+    "style-loader": "0.13.x",
+    "react": "15.3.x",
+    "react-dom": "15.3.x",
+    "react-redux": "4.4.x",
+    "react-templates": "0.5.x",
+    "react-templates-loader": "0.5.x",
+    "redux": "3.6.x",
+    "redux-act": "1.1.x",
+    "redux-loop": "2.2.x",
+    "serve-favicon": "2.3.x",
+    "superagent": "2.3.x",
+    "url-loader": "0.5.x",
+    "webpack": "1.13.x",
+    "webpack-node-externals": "1.5.x"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "1.16.x"
+  }
+}

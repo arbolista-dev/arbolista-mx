@@ -1,0 +1,58 @@
+    <header class="header">
+        <div class="top-bar container-fluid">
+            <div class="actions">
+                <a class="btn scrollto" href="#contact"><i class="fa fa-paper-plane" aria-hidden="true"></i>{this.t('buttons.hire_us')}</a>
+                <a class="btn hidden-xs" href="{this.nextLanguageLink}"><i class="fa fa-globe" aria-hidden="true"></i>{this.t('buttons.next_language')}</a>
+            </div><!--//actions-->
+            <ul class="social list-inline">
+                <!-- <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> -->
+                <li><a href="{this.getText('links')[0].href}"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+                <!-- <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li> -->
+            </ul><!--//social-->
+        </div><!--//top-bar-->
+
+        <div id="overview" class="intro">
+            <div class="container text-center">
+                <!-- <div rt-if="!this.is_resume" class="back social">
+                  <a onClick="{this.pushRoute.bind(this, 'Resume')}"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                </div> -->
+                <img class="profile-image" src="{this.getText('image')}" alt="">
+                <h1 class="name">{this.getText('name')}</h1>
+                <div class="title">{this.getText('title')}</div>
+                <div class="profile">
+                    <p>{this.getJoinText('summary')}</p>
+                </div><!--//profile-->
+            </div><!--//container-->
+        </div><!--//intro-->
+
+        <div class="contact-info">
+            <div class="container text-center">
+                <ul class="list-inline">
+                    <li rt-if="!this.is_resume" class="nationality"><i class="fa fa-flag"></i>{this.getText('nationality')}</li>
+                    <li rt-repeat="link in this.getText('links')" key="{linkIndex}"><a href="{link.href}"><i class="fa {this.getSocialLinkClass(link.title)}"></i>{link.title}</a></li>
+
+                    <!--li><i class="fa fa-phone"></i> <a href="tel: 0123456789">0123 456 7890</a></li-->
+                    <!--li class="website"><i class="fa fa-globe"></i><a href="#" target="_blank">portfoliosite.com</a></li-->
+                </ul>
+            </div><!--//container-->
+        </div><!--//contact-info-->
+
+        <div class="page-nav-space-holder hidden-xs">
+            <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+                <div class="container">
+                    <ul id="page-nav" class="nav page-nav list-inline">
+                        <li><a class="scrollto" href="#overview">{this.t('sections.overview')}</a></li>
+                        <li><a class="scrollto" href="#skills">{this.t('sections.technical_skills')}</a></li>
+                        <li><a class="scrollto" href="#experience">{this.experiences_title}</a></li>
+                        <li rt-if="!this.is_resume"><a class="scrollto" href="#education">{this.t('sections.education')}</a></li>
+                        <li rt-if="!this.is_resume"><a class="scrollto" href="#interests">{this.t('sections.interests')}</a></li>
+                        <li rt-if="this.is_resume"><a class="scrollto" href="#team">{this.t('sections.our_team')}</a></li>
+                        <li rt-if="this.is_resume"><a class="scrollto" href="#contact">{this.t('sections.contact')}</a></li>
+                    </ul><!--//page-nav-->
+                </div>
+            </div><!--//page-nav-wrapper-->
+        </div>
+
+    </header><!--//header-->

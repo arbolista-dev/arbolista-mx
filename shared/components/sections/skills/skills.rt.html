@@ -1,0 +1,15 @@
+<section id="skills" class="skills-section section text-center">
+    <h2 class="section-title">{this.t('sections.technical_skills')}</h2>
+    <div class="top-skills">
+        <!-- <h3 class="subtitle">Top Skills</h3> -->
+        <div class="row">
+            <div rt-repeat="skill in this.getText('skills')" key="{skillIndex}" class="item col-xs-12">
+                <div class="item-inner">
+                    <h4 class="skill-name"><i class="fa fa-terminal" aria-hidden="true"></i> {skill.title}</h4>
+                    <!-- <div class="level">Expert, 8 years</div> -->
+                    <span class="skill-tag" rt-repeat="detail in skill.details" key="{detailIndex}">{detail}</span>
+                </div><!--//item-inner-->
+            </div><!--//item-->
+        </div><!--//row-->
+    </div><!--//top-skills-->
+</section><!--//skills-section-->
