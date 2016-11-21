@@ -21,8 +21,9 @@
     }
   ],
   "contact_invitation": [
-    "I am currently looking for additional web contracts, especially with companies and organizations looking to increase their global presence and are interested in driving the global economy to a more sustainable one.",
-    "If you are open to remote contracts, I will take communication responsibilities as seriously as my programming responsibilities. My end goal is not to write perfect code - my goal is to provide technical services and communicate so you can meet your goals quickly and effectively."
+    "We are currently open for consultation on short to medium term projects (2-6 months) and are especially interested in working with companies focused on solving energy related issues.",
+    "Over the past two years we have developed a set of tools and processes for integrating our technical planning with our clients' vision. We will take the time to fully understand your vision and provide you with a realistic assessment for making it happen.",
+    "If you are interested in working with us, please feel free to reach out so we can discuss a plan to realize your project."
   ],
   "what_we_do": ["Web applications", "Mobile applications (iOS and Android)", "API development"],
   "links": [
@@ -314,10 +315,10 @@
     "drop_message": "Drop us a message at",
     "name": "Your full name",
     "email": "Your email address",
-    "message": "What project are you looking to get developed by us?",
+    "message": "Tell us a bit about your company and project.",
     "submit": "Send",
     "success": "Your message has been sent. We'll get back to you shortly!",
-    "error": "Please make sure all form fields are filled and you've proven not to be a robot.",
+    "error": "Please fill all fields and confirm you are human.",
     "labels": {
       "name": "Name",
       "email": "Email address",
