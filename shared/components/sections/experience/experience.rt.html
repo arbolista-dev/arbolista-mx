@@ -1,0 +1,40 @@
+<section id="experience" class="experiences-section section">
+  <h2 class="section-title">{this.section_title}</h2>
+  <div class="timeline" rt-class="{'team-projects': this.is_resume}">
+      <div rt-if="this.is_resume" rt-repeat="experience in this.getText('projects')" key="{experienceIndex}" class="item">
+          <div class="work-place">
+              <h3 class="place">{experience.notes}</h3>
+              <!-- <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Mountain View</div> -->
+          </div>
+          <div class="job-meta">
+              <div class="title"><a href="{experience.link}">{experience.title}</a></div>
+              <!-- <div class="time">2016 - Present</div> -->
+          </div><!--//job-meta-->
+          <div class="job-desc">
+              <p><a href="{experience.link}">{this.t('buttons.view_project')}</a></p>
+          </div><!--//job-desc-->
+      </div><!--//item-->
+      <div rt-if="!this.is_resume" rt-repeat="experience in this.getText('experience')" key="{experienceIndex}" class="item">
+          <div class="work-place">
+              <h3 class="place">{experience.title}</h3>
+              <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>{experience.location}</div>
+          </div>
+          <!-- <div class="job-meta">
+              <div class="title">Senior Software Engineer</div>
+              <div class="time"> - Present</div>
+          </div> -->
+          <div class="job-desc">
+              <p>{experience.summary}</p>
+              <ul>
+                  <li rt-repeat="detail in experience.details" key="{detailIndex}">{detail}</li>
+              </ul>
+          </div><!--//job-desc-->
+          <div class="skills-section">
+              <h3 class="subtitle">{this.t('Stack')}:</h3>
+              <div class="misc-skills">
+                  <span rt-repeat="skill in experience.skills" key="{skillIndex}" class="skill-tag">{skill}</span>
+              </div>
+          </div><!--//other-skills-->
+      </div><!--//item-->
+  </div><!--//timeline-->
+</section><!--//section-->
