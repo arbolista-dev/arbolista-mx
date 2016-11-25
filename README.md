@@ -15,10 +15,10 @@ Copy and configure env variables.
 cp .env.example .env
 
 // Set:
-CAPTCHA_SITE_KEY=x
 CAPTCHA_SECRET_KEY=x
 SENDGRID_TOKEN=x
 SENDGRID_TEMPLATE_ID=x
+RECIPIENT=enter@email.com
 
 export $(cat .env | xargs)
 

@@ -10,6 +10,7 @@ GLOBAL.NODE_ENV = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 GLOBAL.CAPTCHA_SECRET_KEY = process.env.CAPTCHA_SECRET_KEY;
 GLOBAL.SENDGRID_TOKEN = process.env.SENDGRID_TOKEN;
 GLOBAL.SENDGRID_TEMPLATE_ID = process.env.SENDGRID_TEMPLATE_ID;
+GLOBAL.RECIPIENT = process.env.RECIPIENT;
 
 var env_server_class;
 switch(NODE_ENV){

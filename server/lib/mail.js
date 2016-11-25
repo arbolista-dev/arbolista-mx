@@ -20,7 +20,7 @@ export default function sendMail(params){
   let compose = {
     "personalizations": [{
         "to": [{
-            "email": "manub1312@gmail.com",
+            "email": RECIPIENT,
             "name": "Arbolista Development"
         }],
         "substitutions": {
